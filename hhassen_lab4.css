@@ -1,0 +1,56 @@
+body {
+    background-color: lightblue;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.nameSection {
+    background-color: purple;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 45%;
+    float: left;
+}
+
+.changeColor {
+    background-color: purple;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 45%;
+    float: right;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.validateText {
+    background-color: purple;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 45%;
+    float: left;
+}
+
+.addText {
+    background-color: purple;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 45%;
+    float: right;
+}
