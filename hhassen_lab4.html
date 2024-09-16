@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Hassen Lab 4 Assignment</title>
+        <link rel="stylesheet"href="hhassen_lab4.css">
+    </head>
+    <body id="body">
+        <h1 id = "pageHeading">INST377 - Lab 4</h1>
+        <div class="main-container">
+            <div class="nameSection">
+  
+            <form name = "nameForm" onsubmit="return(formValidation())">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <input type="submit" value="Alert Me!">
+
+            </form>
+            </div>
+
+            <div class="changeColor">
+                <input onclick="changeColor()"  type="submit" value="Change Color">
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="validateText">
+            <form name = "testingText" onsubmit="return(validateText())">
+                <label for="name">Text Tester:</label>
+                <input type="text" id="textTester">
+                <input type="submit" value="Validate Text">
+    
+            </form>
+            </div>
+            
+            <div class="addText" onclick = "addingText()">
+                <input type="submit" value="Add Text">
+
+            </div>
+        
+        </div>
+        <script type ="text/javascript">
+            function formValidation() {
+                if (document.nameForm.name.value === "") {
+                    alert("Please enter a name!")
+                    return false;
+                } else {
+                    let name = document.getElementById("name").value
+                    alert("Hello, " + name +"!");
+                }
+
+         
+            }
+
+            function changeColor() {
+            if(document.getElementById('body').style.backgroundColor == 'green') {
+                const t =document.getElementById('body').style.backgroundColor = 'lightblue';
+            } else {
+            const t = document.getElementById('body').style.backgroundColor = 'green';
+            }
+          }
+            function validateText() {
+
+            }
+
+            function validateText() {
+            const validationRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+            const text = document.getElementById("textTester").value;
+            if (validationRegex.test(text)) {
+                alert("No Special Characters!");
+                return false;
+            }
+            return true;
+            
+            }
+
+            function addingText() {
+                const heading = document.getElementById("pageHeading");
+                heading.textContent += " Add Text";
+            }
+        </script>
+    </body>
+
+</html>
