@@ -8,7 +8,7 @@
         <div class="main-container">
             <div class="nameSection">
   
-            <form name = "nameForm" onsubmit="return(formValidation())">
+            <form name = "nameForm" onsubmit="return (formValidation())">
                 <label for="name">Name:</label>
                 <input type="text" id="name">
                 <input type="submit" value="Alert Me!">
@@ -46,6 +46,7 @@
                 } else {
                     let name = document.getElementById("name").value
                     alert("Hello, " + name +"!");
+                    return true;
                 }
 
          
